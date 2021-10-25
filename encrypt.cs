@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace PacketData
+namespace securitycase
 {
-    public class Encryption
+    public class Encrypt
     {
         private RSACryptoServiceProvider csp = new RSACryptoServiceProvider();
         public RSAParameters publicKey;
