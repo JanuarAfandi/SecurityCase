@@ -1,12 +1,20 @@
-﻿using System;
+﻿using securitycase;
+using System;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 
-namespace server
+namespace Server
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Server server = new Server("127.0.0.1", 7777);
+
+            server.Start();
+
+            Console.ReadKey();
         }
     }
 }
